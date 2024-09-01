@@ -11,6 +11,10 @@ h1 {
     padding: 10px 0;
 }
 
+.main-container {
+    display: none;
+}
+
 .container {
     padding: 20px;
     font-weight: 500;
@@ -74,4 +78,37 @@ form button {
 form button.active, button:hover {
     background: linear-gradient(to right, rgb(229, 11, 131),hsl(4, 100%, 67%));
     box-shadow: 0px 2px 20px hsl(4, 100%, 67%);
+}
+
+.success {
+    margin: 5px 15px;
+}
+
+.success h2{
+    color: hsl(234, 29%, 20%);
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.success p {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.success #email-input {
+    font-weight: 700;
+}
+
+.success button {
+    width: 90%;
+    position: absolute;
+    bottom: 20px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 15px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
 }
