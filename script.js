@@ -4,6 +4,14 @@ const form = document.querySelector('form');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    const email = input.value;
+    const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    console.log(email)
+
+    // if(validEmail.test(email)){
+        
+    // }
 })
 
 input.addEventListener('click', () => {
