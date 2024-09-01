@@ -11,9 +11,9 @@ h1 {
     padding: 10px 0;
 }
 
-.main-container {
+/* .main-container {
     display: none;
-}
+} */
 
 .container {
     padding: 20px;
@@ -42,6 +42,10 @@ form {
     flex-direction: column;
     row-gap: 15px;
     margin-top: 25px;
+}
+
+form .error {
+    display: block;
 }
 
 form label {
@@ -81,6 +85,7 @@ form button.active, button:hover {
 }
 
 .success {
+    display: none;
     margin: 5px 15px;
 }
 
