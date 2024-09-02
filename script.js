@@ -4,6 +4,8 @@ const form = document.querySelector('form');
 const mainContainer = document.querySelector('.main-container');
 const success = document.querySelector('.success');
 const error = document.querySelector('.error');
+const emailValue = document.querySelector('#email-value');
+const dismissButton = document.querySelector('.dismiss');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -14,6 +16,7 @@ form.addEventListener('submit', (e) => {
 
     if(validEmail.test(email)){
         success.style.display = 'block';
+        emailValue.innerHTML = email;
         mainContainer.style.display = 'none';
         console.log('success');
     } else {
@@ -22,6 +25,12 @@ form.addEventListener('submit', (e) => {
         console.log('error');
     }
 });
+
+dismissButton.addEventListener('click', () => {
+    success.style.display = 'none';
+    mainContainer.style.display = 'block';
+    email.value = ''
+})
 
 emailInput.addEventListener('click', () => {
     emailInput.classList.toggle('active');
