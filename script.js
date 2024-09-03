@@ -34,6 +34,7 @@ dismissButton.addEventListener('click', () => {
 
 emailInput.addEventListener('click', () => {
     emailInput.classList.toggle('active');
+    // emailInput.classList.toggle('error');
 });
 
 button.addEventListener('click', () => {
